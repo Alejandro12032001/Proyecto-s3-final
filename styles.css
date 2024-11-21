@@ -1,27 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   background-color: white;
-  background-position: center;
+  background-position: colums;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: none;
-  align-items: none;
+  justify-content: colums;
+  align-items: center;
   height: 100vh;
 }
 
-.container {
-  width: 350px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: yellow;
-  border: 1px solid #ccc;
-  border-radius: 40px;
-  padding: 20px;
-}
+
+
 
 button {
   background-color: #4CAF50;
