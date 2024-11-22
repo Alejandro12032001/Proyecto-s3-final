@@ -1,3 +1,37 @@
 body {
-  background-color: indigo;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  background-position: colums;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  height: 100vh;
+}
+/* Estilos para la lista completa */
+ul {
+  list-style: none; /* Quita los marcadores de lista por defecto */
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para los elementos de la lista */
+li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+}
+
+/* Estilos para el botón "Completada" */
+.completada {
+  text-decoration: line-through; /* Tacha el texto */
+  color: gray;
+}
+.editar:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
