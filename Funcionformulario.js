@@ -1,4 +1,5 @@
 
+// Validacion del formulariow
 function validarFormulario() {
   let nombre = document.getElementById('nombre').value;
   let apellido = document.getElementById('apellido').value;
@@ -6,6 +7,7 @@ function validarFormulario() {
   let password = document.getElementById('password').value;
   let confirmPassword = document.getElementById('confirmPassword').value;
 
+  // Elementos de error
   let errorNombre = document.getElementById('errorNombre');
   let errorApellido = document.getElementById('errorApellido');
   let errorEmail = document.getElementById('errorEmail');
@@ -18,6 +20,7 @@ function validarFormulario() {
   let emailValido = /\S+@\S+\.\S+/.test(email);
   let passwordValido = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!$-_.,])/.test(password) && password.length >= 8;
 
+  // Actualizar los mensajes de error
   errorNombre.textContent = nombreValido ? '' : 'Solo se permiten letras y espacios';
   errorApellido.textContent = apellidoValido ? '' : 'Solo se permiten letras y espacios';
   errorEmail.textContent = emailValido ? '' : 'Ingrese un correo electrónico válido';
