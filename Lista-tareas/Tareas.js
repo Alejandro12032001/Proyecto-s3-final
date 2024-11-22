@@ -18,7 +18,7 @@ function agregarTarea() {
       const botonEditar = document.createElement("button");
       botonEditar.textContent = "Editar";
       botonEditar.onclick = function(){
-        itemLista.botonEditar(botonEditar)
+        itemLista.botonEditar()
           
       };
 
